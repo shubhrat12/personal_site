@@ -898,6 +898,14 @@ section {
     color: var(--color-gray-light);
 }
 
+/* Desktop alignment fix */
+@media (min-width: 769px) {
+    .hero-social,
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-content,
@@ -963,6 +971,10 @@ section {
         justify-content: center;
     }
     
+    .hero-social {
+        justify-content: center;
+    }
+    
     .profile-card {
         width: 250px;
         height: 250px;
@@ -1021,6 +1033,10 @@ section {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .hero-social {
+        justify-content: center;
     }
     
     .btn {
